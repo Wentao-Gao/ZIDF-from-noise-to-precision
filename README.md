@@ -5,6 +5,10 @@
 [![Paper](https://img.shields.io/badge/Paper-ECAI%202025-blue)](https://doi.org/10.3233/FAIA250921)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
+<p align="center">
+  <img src="docs/Figure1_zero_distribution.png" alt="ZIDF Framework" width="600"/>
+</p>
+
 Official PyTorch implementation of **ZIDF (Zero Inflation Diffusion Framework)** for zero-inflated precipitation forecasting, accepted at **ECAI 2025**.
 
 Some other related repos including more zero inflation analysis can be found in:
@@ -97,6 +101,10 @@ bash scripts/reproduce_sa.sh
 ```
 
 ## 📊 Results
+
+<p align="center">
+  <img src="docs/Figure4_simresult.png" alt="ZIDF Framework" width="1000"/>
+</p>
 
 Performance comparison on South Australian precipitation data:
 
@@ -346,6 +354,10 @@ If not provided or import fails, the training falls back to the internal simplif
 ### Data Preprocessing
 
 The South Australia precipitation experiment reads NCEP/NCAR NetCDF files. Update `configs/sa_precip.yaml` with your local paths, variables, and region.
+
+<p align="center">
+  <img src="docs/Figure5_study_area.png" alt="ZIDF Framework" width="600"/>
+</p>
 
 Expected steps (to be refined/expanded):
 - Load variables: precipitation (e.g., `prate`) and meteorological covariates (`air`, `uwnd`, `vwnd`, `rhum`, `pres`).
