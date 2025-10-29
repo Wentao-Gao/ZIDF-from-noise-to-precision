@@ -7,6 +7,14 @@
 
 Official PyTorch implementation of **ZIDF (Zero Inflation Diffusion Framework)** for zero-inflated precipitation forecasting, accepted at **ECAI 2025**.
 
+Some other related repos including more zero inflation analysis can be found in:
+
+[🚀 Zero-Inflated Time Series Analysis Toolkit](https://github.com/Wentao-Gao/Zero_Inflated_Time-Series_Analysis_Toolkit)
+
+[☔️ Climate Data Agent](https://github.com/Wentao-Gao/Climate_Data_Agent)
+
+[☁️ Synthetic Weather Data Generation with Varied Zero Thresholds](https://github.com/Wentao-Gao/Zero_inflation_data_simulation)
+
 ## 📖 Overview
 
 Zero-inflated data pose significant challenges in precipitation forecasting due to the predominance of zeros with sparse non-zero events. ZIDF addresses this by integrating:
