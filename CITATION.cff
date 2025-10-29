@@ -1,0 +1,64 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Gao"
+    given-names: "Wentao"
+    email: "gaowy014@mymail.unisa.edu.au"
+    affiliation: "University of South Australia"
+  - family-names: "Li"
+    given-names: "Jiuyong"
+    affiliation: "University of South Australia"
+  - family-names: "Liu"
+    given-names: "Lin"
+    affiliation: "University of South Australia"
+  - family-names: "Le"
+    given-names: "Thuc Duy"
+    affiliation: "University of South Australia"
+  - family-names: "Chen"
+    given-names: "Xiongren"
+    affiliation: "University of South Australia"
+  - family-names: "Du"
+    given-names: "Xiaojing"
+    affiliation: "University of South Australia"
+  - family-names: "Liu"
+    given-names: "Jixue"
+    affiliation: "University of South Australia"
+  - family-names: "Zhao"
+    given-names: "Yanchang"
+    affiliation: "CSIRO Data61"
+  - family-names: "Chen"
+    given-names: "Yun"
+    affiliation: "CSIRO Environment"
+title: "ZIDF: Zero Inflation Diffusion Framework for Precipitation Prediction"
+version: 1.0.0
+doi: 10.3233/FAIA250921
+date-released: 2025-01-01
+url: "https://github.com/Wentao-Gao/ZIDF-from-noise-to-precision"
+preferred-citation:
+  type: conference-paper
+  authors:
+    - family-names: "Gao"
+      given-names: "Wentao"
+    - family-names: "Li"
+      given-names: "Jiuyong"
+    - family-names: "Liu"
+      given-names: "Lin"
+    - family-names: "Le"
+      given-names: "Thuc Duy"
+    - family-names: "Chen"
+      given-names: "Xiongren"
+    - family-names: "Du"
+      given-names: "Xiaojing"
+    - family-names: "Liu"
+      given-names: "Jixue"
+    - family-names: "Zhao"
+      given-names: "Yanchang"
+    - family-names: "Chen"
+      given-names: "Yun"
+  title: "From Noise to Precision: A Diffusion-Driven Approach to Zero-Inflated Precipitation Prediction"
+  conference:
+    name: "ECAI 2025"
+  year: 2025
+  start: 1107
+  end: 1114
+  doi: 10.3233/FAIA250921

@@ -1,0 +1,45 @@
+# South Australia precipitation experiment (fill paths accordingly)
+data:
+  use_synthetic: false
+  input_len: 48
+  output_len: 24
+  n_features: 6  # example: [periodic, trend, temperature, wind, humidity, pressure]
+  n_samples: 0  # ignored for real data
+  region:
+    lat_min: -38.0
+    lat_max: -26.0
+    lon_min: 129.0
+    lon_max: 141.0
+  variables: ["prate", "air", "uwnd", "vwnd", "rhum", "pres"]
+  netcdf_paths:
+    prate: /path/to/ncep/prate.nc
+    air: /path/to/ncep/air.nc
+    uwnd: /path/to/ncep/uwnd.nc
+    vwnd: /path/to/ncep/vwnd.nc
+    rhum: /path/to/ncep/rhum.nc
+    pres: /path/to/ncep/pres.nc
+
+model:
+  d_model: 512
+  n_heads: 8
+  e_layers: 2
+  d_layers: 1
+  dropout: 0.05
+  alpha_noise: 0.1
+
+diffusion:
+  diffusion_hidden_dim: 128
+  diffusion_steps: 1000
+  beta_schedule: cosine
+
+train:
+  batch_size: 64
+  pred_epochs: 50
+  diff_epochs: 30
+  pred_lr: 1e-4
+  diff_lr: 1e-4
+  num_workers: 4
+  seed: 42
+
+output:
+  save_dir: ./checkpoints_sa

@@ -1,0 +1,31 @@
+data:
+  use_synthetic: true
+  n_samples: 10000
+  n_features: 5
+  zero_ratio: 0.7
+  input_len: 48
+  output_len: 24
+
+model:
+  # Official NST will be used; d_model/etc for internal NST ignored
+  use_official_nst: true
+  nst_module: your_official_repo.module   # e.g., nonstationary_transformers.model
+  nst_class: YourNSTClass                 # e.g., NonstationaryTransformer
+  alpha_noise: 0.1
+
+diffusion:
+  diffusion_hidden_dim: 128
+  diffusion_steps: 1000
+  beta_schedule: cosine
+
+train:
+  batch_size: 64
+  pred_epochs: 50
+  diff_epochs: 30
+  pred_lr: 1e-4
+  diff_lr: 1e-4
+  num_workers: 4
+  seed: 42
+
+output:
+  save_dir: ./checkpoints_official
